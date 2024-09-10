@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="overlay"></div>
     <header class="page-header">
         <button type="button" class="page-header__button page-header__button-burger"></button>
         <img src="icons/Logo.svg" alt="" class="page-header__logo">
-        <button type="button" class="page-header__button page-header__button page-header__button-repair"></button>
         <div class="page-header__divider"></div>
+        <button type="button" class="page-header__button page-header__button page-header__button-repair"></button>
         <button type="button" class="page-header__button page-header__button-status"></button>
     </header>
     <main class="main">
         <h1 class="main__heading">Услуги и сервисы</h1>
-        <div class="main__swiper">
-            <button type="button" class="swiper__slide swiper__slide-active">Ремонтируемые устройства</button>
-            <button type="button" class="swiper__slide">Дополнительные услуги</button>
-        </div>
-        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+        <ul class="main__swiper">
+            <li><button type="button" class="swiper__slide swiper__slide-active">Ремонтируемые устройства</button></li>
+            <li><button type="button" class="swiper__slide">Дополнительные услуги</button></li>
+        </ul>
+        <p class="main__content">
+            Мы являемся авторизованным <br>
+            сервисным центром по ремонту техники <br>
+            Dell. Только у нас вы можете <br>
+            отремонтировать свой ноутбук Dell с <br>
+            официальной гарантией производителя.</p>
         <h4 class="main__h4">Читать далее</h4>
         <img src="images/Picture.png" alt="" class="main__image">
     </main>
 </body>
+
 </html>
