@@ -20,6 +20,7 @@
 }
 
 body {
+    width: 320px;
     font-family: "TT Lakes";
     margin: 0;
     background-color: #F8F8F8;
@@ -100,6 +101,7 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     height: auto;
+    clip: auto;
 
     list-style: none;
     padding-inline-start: 0;
