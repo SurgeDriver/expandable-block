@@ -75,6 +75,7 @@ body {
 
 .main {
     margin-left: 16px;
+    overflow: hidden;
 }
 
 .main__heading {
@@ -175,7 +176,7 @@ body {
 }
 
 
-
+/* 
 *{
-    /* border: dashed 1px red; */
-}
+    border: dashed 1px red;
+} */
