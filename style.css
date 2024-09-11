@@ -20,7 +20,7 @@
 }
 
 body {
-    width: 320px;
+    /* width: 320px; */
     font-family: "TT Lakes";
     margin: 0;
     background-color: #F8F8F8;
@@ -53,15 +53,15 @@ body {
     background-position: center;
 }
 
-.page-header__button-burger {
+.page-header__button_burger {
     background-image: url(icons/Burger.svg);
 }
 
-.page-header__button-repair {
+.page-header__button_repair {
     background-image: url(icons/Repair.svg);
 }
 
-.page-header__button-status {
+.page-header__button_status {
     background-image: url(icons/Status.svg);
 }
 
@@ -116,7 +116,7 @@ body {
     background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.swiper__slide {
+.main__swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,7 @@ body {
     padding-left: 12px;
 }
 
-.swiper__slide-active {
+.main__swiper-slide_active {
     background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
 }
