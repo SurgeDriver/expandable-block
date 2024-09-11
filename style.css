@@ -25,6 +25,11 @@ body {
     margin: 0;
     background-color: #F8F8F8;
 }
+@media (hover: none) and (pointer: coarse) {
+    body {
+        width: 768px;
+    }
+}
 
 .page-header {
     display: flex;
