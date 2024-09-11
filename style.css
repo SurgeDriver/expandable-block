@@ -20,15 +20,10 @@
 }
 
 body {
-    width: 100vh;
+    width: auto;
     font-family: "TT Lakes";
     margin: 0;
     background-color: #F8F8F8;
-}
-@media (hover: none) and (pointer: coarse) {
-    body {
-        width: 768px;
-    }
 }
 
 .page-header {
@@ -66,6 +61,7 @@ body {
 
 .page-header__button_status {
     background-image: url(icons/Status.svg);
+    left: 0;
 }
 
 .page-header__divider {
@@ -175,11 +171,5 @@ body {
 }
 
 .main__image {
-    margin-right: 0 !important;
+    width: 100%
 }
-
-
-/* 
-*{
-    border: dashed 1px red;
-} */
