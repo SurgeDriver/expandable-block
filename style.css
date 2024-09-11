@@ -73,7 +73,6 @@ body {
 }
 
 .main {
-    margin-left: 16px;
     overflow: hidden;
 }
 
@@ -82,6 +81,7 @@ body {
     padding-bottom: 8px;
     font-weight: 700;
     font-size: 27px;
+    margin-left: 16px;
 }
 
 .main__heading::before {
@@ -106,6 +106,7 @@ body {
     clip: auto;
     list-style: none;
     padding-inline-start: 0;
+    margin-left: 16px;
 }
 
 .main__swiper::before {
@@ -147,6 +148,7 @@ body {
     line-height: 24px;
     position: relative;
     letter-spacing: -0.4px;
+    margin-left: 16px;
 }
 
 .main__h4::before {
@@ -168,8 +170,9 @@ body {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.3px;
+    margin-left: 16px;
 }
 
 .main__image {
-    width: 100%
+    width: 100%;
 }
