@@ -20,10 +20,9 @@
 }
 
 body {
-    /* width: 320px; */
+    
     font-family: "TT Lakes";
     margin: 0;
-    background-color: #F8F8F8;
     background-color: #F8F8F8;
 }
 
@@ -33,7 +32,6 @@ body {
     column-gap: 16px;
     align-items: center;
     background-color: #FFF;
-    /* width: 320px; */
     height: 88px;
     padding-left: 16px;
 }
@@ -171,8 +169,7 @@ body {
 }
 
 .main__image {
-    width: 320px;
-    margin-left: -16px;
+    margin-right: 0 !important;
 }
 
 
