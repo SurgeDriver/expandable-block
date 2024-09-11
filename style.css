@@ -20,7 +20,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100vh;
     font-family: "TT Lakes";
     margin: 0;
     background-color: #F8F8F8;
@@ -97,11 +97,12 @@ body {
 .main__swiper {
     display: flex;
     flex-wrap: inherit;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
-    height: auto;
-    clip: auto;
 
+    width: 100%;
+
+    clip: auto;
     list-style: none;
     padding-inline-start: 0;
 }
