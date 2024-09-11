@@ -98,7 +98,7 @@ body {
 .main__swiper {
     display: flex;
     flex-wrap: inherit;
-    overflow-x: auto;
+    overflow: hidden;
     white-space: nowrap;
     height: auto;
     clip: auto;
