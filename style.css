@@ -26,22 +26,35 @@ body {
     background-color: #F8F8F8;
 }
 
-.page-header {
+.header {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
     align-items: center;
+    justify-content: space-around;
+
     background-color: #FFF;
     height: 88px;
     padding-left: 16px;
+    padding-right: 16px;
+    min-width: 320px;
 }
 
-.page-header__logo {
+.flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+}
+
+
+
+.header__logo {
     width: 98px;
     height: 52px;
 }
 
-.page-header__button {
+.button {
     width: 40px;
     height: 40px;
     border: 0;
@@ -51,20 +64,36 @@ body {
     background-position: center;
 }
 
-.page-header__button_burger {
+.button__container {
+    display: none;
+    align-items: center;
+    column-gap: 8px;
+}
+
+
+.desktop-button__text {
+    font-weight: 600;
+}
+.flex__container_desktop {
+    justify-content: space-between;
+    margin-right: 32px;
+}
+
+
+.button_burger {
     background-image: url(icons/Burger.svg);
 }
-
-.page-header__button_repair {
+.button_repair {
     background-image: url(icons/Repair.svg);
 }
-
-.page-header__button_status {
+.button_status {
     background-image: url(icons/Status.svg);
-    left: 0;
 }
+.button_call {background-image: url(icons/Call.svg);}
+.button_chat {background-image: url(icons/Chat.svg);}
+.button_profile {background-image: url(icons/Profile.svg);}
 
-.page-header__divider {
+.divider {
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
@@ -83,6 +112,14 @@ body {
     font-size: 27px;
     margin-left: 16px;
 }
+
+/* .main__heading-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+} */
 
 .main__heading::before {
     content: "";
@@ -175,4 +212,22 @@ body {
 
 .main__image {
     width: 100%;
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+    .button__container {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_tablet {
+        display: none;
+    }
+    .divider_tablet {
+        display: none;
+    }
 }
