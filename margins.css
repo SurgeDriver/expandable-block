@@ -41,3 +41,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.main__image {
+    margin-top: 20px;
+}
