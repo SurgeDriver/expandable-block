@@ -1,0 +1,65 @@
+
+/* мобилки */
+@media (max-width: 768px) {
+    
+    /* .header {
+        justify-content: space-around;
+    } */
+
+    .container_tablet {
+        display: none;
+    }
+
+    .divider_tablet {
+        display: none;
+    }
+
+    .section__p {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+    }
+}
+
+/* планшеты */
+@media (min-width: 768px) {
+    .main__section {
+        display: flex;
+        gap: 48px;
+    }
+
+    .section__text {
+        width: 50%;
+    }
+
+    .main__image {
+        width: 50%;
+    }
+
+    .section__p_tablet {
+        display: block;
+    }
+}
+
+/* десктоп */
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+
+    .main__image {
+        margin-right: 25px;
+    }
+
+    .button__container {
+        display: flex;
+    }
+
+    .section__p_tablet {
+        display: none;
+    }
+
+    .section__p_desktop {
+        display: block;
+    }
+}

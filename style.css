@@ -22,7 +22,6 @@
 body {
     width: auto;
     font-family: "TT Lakes";
-    margin: 0;
     background-color: #F8F8F8;
 }
 
@@ -30,24 +29,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     background-color: #FFF;
     height: 88px;
-    padding-left: 16px;
-    padding-right: 16px;
     min-width: 320px;
 }
 
-.flex__container {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    column-gap: 16px;
 }
-
-
 
 .header__logo {
     width: 98px;
@@ -62,64 +56,67 @@ body {
     background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button__container {
     display: none;
     align-items: center;
-    column-gap: 8px;
 }
-
 
 .desktop-button__text {
     font-weight: 600;
 }
-.flex__container_desktop {
-    justify-content: space-between;
-    margin-right: 32px;
-}
 
+.flex-container_desktop {
+    justify-content: space-between;
+}
 
 .button_burger {
     background-image: url(icons/Burger.svg);
 }
+
 .button_repair {
     background-image: url(icons/Repair.svg);
 }
+
 .button_status {
     background-image: url(icons/Status.svg);
 }
-.button_call {background-image: url(icons/Call.svg);}
-.button_chat {background-image: url(icons/Chat.svg);}
-.button_profile {background-image: url(icons/Profile.svg);}
+
+.button_call {
+    background-image: url(icons/Call.svg);
+}
+
+.button_chat {
+    background-image: url(icons/Chat.svg);
+}
+
+.button_profile {
+    background-image: url(icons/Profile.svg);
+}
 
 .divider {
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
     border-radius: 1px;
-    margin-right: 4px;
 }
 
 .main {
-    overflow: hidden;
+    overflow: visible;
 }
 
 .main__heading {
-    padding-top: 8px;
-    padding-bottom: 8px;
     font-weight: 700;
     font-size: 27px;
-    margin-left: 16px;
 }
-
-/* .main__heading-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 16px;
-} */
 
 .main__heading::before {
     content: "";
@@ -134,61 +131,33 @@ body {
 
 .main__swiper {
     display: flex;
-    flex-wrap: inherit;
-    overflow-x: scroll;
-    white-space: nowrap;
-
-    width: 100%;
-
-    clip: auto;
-    list-style: none;
-    padding-inline-start: 0;
-    margin-left: 16px;
-}
-
-.main__swiper::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 40px;
-    right: 0;
-    background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    overflow: auto;
 }
 
 .main__swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    width: 246px;
-    height: 40px;
-    color: #7E7E82;
-    border-radius: 6px;
-    border: none;
     background-color: transparent;
-    padding-right: 12px;
-    padding-left: 12px;
+    border: none;    
+    white-space: nowrap;
+    height: 40px;
+    font-size: 16px;
+    border: solid 2px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: border 0.2s, background-color 0.2s;
 }
 
-.main__swiper-slide_active {
+.main__swiper-slide:hover {
     background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
 }
 
-.main__swiper::-webkit-scrollbar {
-    display: none;
-}
-
-.main__h4 {
+.section__readMore {
     height: 24px;
-    padding-left: 32px;
     line-height: 24px;
     position: relative;
     letter-spacing: -0.4px;
-    margin-left: 16px;
 }
 
-.main__h4::before {
+.section__readMore::before {
     content: "";
     position: absolute;
     background-image: url(icons/Expand.svg);
@@ -201,33 +170,14 @@ body {
     left: 0;
 }
 
-.main__content {
-    padding-top: 8px;
-    margin-bottom: -5px;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: -0.3px;
-    margin-left: 16px;
-}
-
 .main__image {
     width: 100%;
 }
 
-@media (min-width: 1120px) {
-    .header {
-        display: none;
-    }
-    .button__container {
-        display: flex;
-    }
+.section__p_tablet {
+    display: none;
 }
 
-@media (max-width: 768px) {
-    .container_tablet {
-        display: none;
-    }
-    .divider_tablet {
-        display: none;
-    }
+.section__p_desktop {
+    display: none;
 }

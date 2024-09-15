@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="margins.css">
+    <link rel="stylesheet" href="adaptive.css">
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="flex__container">
+        <div class="flex-container">
             <button type="button" class="button button_burger"></button>
             <div class="divider divider_tablet"></div>
             <img src="icons/Logo.svg" alt="" class="header__logo">
         </div>
 
-        <div class="flex__container">
-            <div class="flex__container container_tablet">
+        <div class="flex-container">
+            <div class="flex-container container_tablet">
                 <button type="button" class="button button_call"></button>
                 <button type="button" class="button button_chat"></button>
                 <button type="button" class="button button_profile"></button>
@@ -26,15 +28,12 @@
             <button type="button" class="button button_repair"></button>
             <button type="button" class="button button_status"></button>
         </div>
-
-
-
     </header>
 
     <main class="main">
-        <div class="flex__container flex__container_desktop">
+        <div class="flex-container flex-container_desktop">
             <h1 class="main__heading">Услуги и сервисы</h1>
-            <div class="flex__container">
+            <div class="flex-container">
                 <div class="button__container">
                     <span class="desktop-button__text">Оставить заявку</span>
                     <button type="button" class="button button_repair"></button>
@@ -46,21 +45,34 @@
             </div>
         </div>
 
+        <div class="main__swiper">
+            <button type="button" class="main__swiper-slide">Ремонтируемые устройства</button>
+            <button type="button" class="main__swiper-slide">Дополнительные услуги</button>
+            <button type="button" class="main__swiper-slide">Цены на услуги</button>
+            <button type="button" class="main__swiper-slide">Адреса сервисных центров</button>
+            <button type="button" class="main__swiper-slide">Специальные цены</button>
+            <button type="button" class="main__swiper-slide">Отзывы</button>
+        </div>
 
+        <section class="main__section">
+            <div class="section__text">
+                <p class="section__p">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="section__p_tablet">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                </p>
+                <p class="section__p_desktop">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    очередь, советуют нас родным и близким.
+                </p>
 
-        <ul class="main__swiper">
-            <li><button type="button" class="main__swiper-slide main__swiper-slide_active">Ремонтируемые
-                    устройства</button></li>
-            <li><button type="button" class="main__swiper-slide">Дополнительные услуги</button></li>
-        </ul>
-        <p class="main__content">
-            Мы являемся авторизованным <br>
-            сервисным центром по ремонту техники <br>
-            Dell. Только у нас вы можете <br>
-            отремонтировать свой ноутбук Dell с <br>
-            официальной гарантией производителя.</p>
-        <h4 class="main__h4">Читать далее</h4>
-        <img src="images/Picture.png" alt="" class="main__image">
+                <h4 class="section__readMore">Читать далее</h4>
+            </div>
+            <img src="images/Picture.png" alt="" class="main__image">
+        </section>
     </main>
 </body>
 
