@@ -12,50 +12,38 @@
 
 <body>
     <header class="header">
-        <div class="flex-container">
-            <button type="button" class="button button_burger"></button>
-            <div class="header__logo-container flex-container">
+        <div class="flex">
+            <button class="button button_burger" type="button"></button>
+            <div class="header__logo-container flex">
                 <img src="icons/Logo.svg" alt="" class="header__logo">
             </div>
         </div>
 
-        <div class="flex-container">
-            <div class="flex-container header__tablet-container">
-                <button type="button" class="button button_call"></button>
-                <button type="button" class="button button_chat"></button>
-                <button type="button" class="button button_profile"></button>
+        <div class="flex">
+            <div class="flex header__tablet-container">
+                <button class="button button_call" type="button"></button>
+                <button class="button button_chat" type="button"></button>
+                <button class="button button_profile" type="button"></button>
             </div>
-            <button type="button" class="button button_repair"></button>
-            <button type="button" class="button button_status"></button>
+            <button class="button button_repair" type="button"></button>
+            <button class="button button_status" type="button"></button>
         </div>
     </header>
 
     <main class="main">
-        <div class="flex-container flex-container_desktop">
-            <h1 class="main__heading">Услуги и сервисы</h1>
-            <div class="flex-container">
-                <div class="button__container">
-                    <span class="desktop-button__text">Оставить заявку</span>
-                    <button type="button" class="button button_repair"></button>
-                </div>
-                <div class="button__container">
-                    <span class="desktop-button__text">Статус Ремонта</span>
-                    <button type="button" class="button button_status"></button>
-                </div>
-            </div>
-        </div>
 
-        <div class="main__swiper">
-            <button type="button" class="main__swiper-slide main__swiper-slide_active">Ремонтируемые бренды</button>
-            <button type="button" class="main__swiper-slide">Дополнительные услуги</button>
-            <button type="button" class="main__swiper-slide">Цены на услуги</button>
-            <button type="button" class="main__swiper-slide">Адреса сервисных центров</button>
-            <button type="button" class="main__swiper-slide">Специальные цены</button>
-            <button type="button" class="main__swiper-slide">Отзывы</button>
+
+        <div class="navigation">
+            <button class="navigation_button navigation_button_active">Ремонтируемые бренды</button>
+            <button class="navigation_button">Дополнительные услуги</button>
+            <button class="navigation_button">Цены на услуги</button>
+            <button class="navigation_button">Адреса сервисных центров</button>
+            <button class="navigation_button">Специальные цены</button>
+            <button class="navigation_button">Отзывы</button>
         </div>
 
         <section class="main__section">
-            <div class="section__text">
+            <div class="main__text">
                 <p class="section__p">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                     отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -68,7 +56,7 @@
                     количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
                     очередь, советуют нас родным и близким.
                 </p>
-                <span class="section__readMore">Читать далее</span>
+                <a href="#" class="section__readMore">Читать далее</a>
             </div>
             <img src="images/Picture3.png" alt="" class="main__image">
         </section>

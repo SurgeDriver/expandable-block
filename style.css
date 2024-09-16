@@ -23,28 +23,39 @@ body {
     width: auto;
     font-family: "TT Lakes";
     background-color: #F8F8F8;
+
+    margin: 0;
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+
+    column-gap: 16px;
 }
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-
     background-color: #FFF;
-    height: 88px;
+    /* height: 88px; */
     min-width: 320px;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
+    
+    padding: 16px;
 }
 
 .header__logo {
     position: absolute;
+    width: 98px;
+    height: 52px;
+    background-image: url(icons/Logo.svg);
 }
 
 .header__logo-container {
@@ -52,9 +63,13 @@ body {
     height: 52px;
     justify-content: center;
     position: relative;
+
+    padding-right: 20px;
+    padding-left: 0px;
 }
 
-.header__logo-container::before, .header__logo-container::after {
+.header__logo-container::before,
+.header__logo-container::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -62,7 +77,9 @@ body {
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
-  }
+
+    margin-top: -16px;
+}
 
 .header__logo-container::before {
     left: 0;
@@ -75,6 +92,8 @@ body {
 
 .header__tablet-container {
     position: relative;
+
+    padding-right: 20px;
 }
 
 .header__tablet-container::after {
@@ -86,6 +105,8 @@ body {
     height: 32px;
     background-color: #EAEAEA;
     right: 0;
+
+    margin-top: -16px;
 }
 
 .button {
@@ -105,53 +126,25 @@ body {
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
-.button__container {
+.desktop-buttons {
     display: none;
-    align-items: center;
 }
 
-.desktop-button__text {
-    font-weight: 500;
-}
-
-.flex-container_desktop {
+.navigation-header {
     justify-content: space-between;
+    margin-right: 32px;
 }
 
-.button_burger {
-    background-image: url(icons/Burger.svg);
-}
-
-.button_repair {
-    background-image: url(icons/Repair.svg);
-}
-
-.button_status {
-    background-image: url(icons/Status.svg);
-}
-
-.button_call {
-    background-image: url(icons/Call.svg);
-}
-
-.button_chat {
-    background-image: url(icons/Chat.svg);
-}
-
-.button_profile {
-    background-image: url(icons/Profile.svg);
-}
-
-.main {
-    overflow: visible;
-}
-
-.main__heading {
+.navigation-header__title {
     font-weight: 700;
     font-size: 27px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
 }
 
-.main__heading::before {
+.navigation-header__title::before {
     content: "";
     background-image: url(images/highlight.svg);
     background-repeat: no-repeat;
@@ -162,12 +155,21 @@ body {
     left: 0;
 }
 
-.main__swiper {
-    display: flex;
-    overflow: auto;
+
+.main {
+    overflow: visible;
 }
 
-.main__swiper-slide {
+.navigation {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 20px;
+    margin-bottom: 32px;
+}
+
+.navigation_button {
     background-color: transparent;
     color: rgb(126, 126, 130);
     border: none;
@@ -177,17 +179,18 @@ body {
     border: solid 2px rgba(0, 0, 0, 0);
     border-radius: 5px;
     transition: border 0.2s, background-color 0.2s;
+    line-height: 40px;
+    padding: 0px 14px;
 }
 
-.main__swiper-slide_active {
+.navigation_button_active {
     background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
 }
 
-.main__swiper-slide:hover {
+.navigation_button:hover {
     background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
-
 }
 
 .section__readMore {
@@ -197,6 +200,10 @@ body {
     line-height: 24px;
     letter-spacing: -0.4px;
     position: relative;
+    text-decoration: none;
+    color: black;
+
+    padding-left: 32px;
 }
 
 .section__readMore:hover {
@@ -217,8 +224,15 @@ body {
     left: 0;
 }
 
+.main-content {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .main__image {
     width: 100%;
+
+    margin-top: 20px;
 }
 
 .section__p_tablet {
@@ -227,4 +241,72 @@ body {
 
 .section__p_desktop {
     display: none;
+}
+
+
+
+.navigation-header__button {
+    position: relative;
+    background-color: transparent;
+    height: 40px;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 40px;
+    border: none;
+    border-radius: 8px;
+    
+    padding-right: 48px;
+    margin-right: 20px;
+}
+
+.navigation-header__button:hover {
+    background-color: #F0F0F0;
+    /* cursor: pointer; */
+}
+
+.navigation-header__button::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    margin-left: 8px;
+}
+
+.navigation-header__button:hover::after {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button_burger {
+    background-image: url(icons/Burger.svg);
+}
+
+.button_call {
+    background-image: url(icons/Call.svg);
+}
+
+.button_chat {
+    background-image: url(icons/Chat.svg);
+}
+
+.button_profile {
+    background-image: url(icons/Profile.svg);
+}
+
+.button_repair,
+.button_icon_repair::after {
+    background-image: url(icons/Repair.svg);
+}
+
+.button_status,
+.button_icon_status::after {
+    background-image: url(icons/Status.svg);
 }

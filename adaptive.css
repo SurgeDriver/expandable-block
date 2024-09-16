@@ -14,12 +14,12 @@
 
 /* планшеты */
 @media (min-width: 768px) {
-    .main__section {
+    .main-content {
         display: flex;
         gap: 48px;
     }
 
-    .section__text {
+    .main__text {
         width: 50%;
     }
 
@@ -47,15 +47,18 @@
 
 /* десктоп */
 @media (min-width: 1120px) {
-    .header {
+    .header__group-right, .header__group-left {
         display: none;
+    }
+    .header {
+        padding: 0;
     }
 
     .main__image {
         margin-right: 25px;
     }
 
-    .button__container {
+    .desktop-buttons {
         display: flex;
     }
 
