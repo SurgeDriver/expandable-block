@@ -32,15 +32,15 @@
         display: block;
     }
 
-    .header__logo-container {
-        padding-left: 20px;
+    .header__logo {
+        padding-left: 40px;
         padding-right: 0;
     }
-    .header__logo-container::before {
+    .header__logo::before {
         display: inline-block;
     }
 
-    .header__logo-container::after {
+    .header__logo::after {
         display: none;
     }
 }

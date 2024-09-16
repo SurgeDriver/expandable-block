@@ -56,20 +56,17 @@ body {
     width: 98px;
     height: 52px;
     background-image: url(icons/Logo.svg);
-}
-
-.header__logo-container {
-    width: 98px;
-    height: 52px;
+    background-repeat: no-repeat;
+    background-position: center;
     justify-content: center;
     position: relative;
-
-    padding-right: 20px;
+    
     padding-left: 0px;
+    padding-right: 40px;
 }
 
-.header__logo-container::before,
-.header__logo-container::after {
+.header__logo::before,
+.header__logo::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -81,12 +78,12 @@ body {
     margin-top: -16px;
 }
 
-.header__logo-container::before {
+.header__logo::before {
     left: 0;
     display: none;
 }
 
-.header__logo-container::after {
+.header__logo::after {
     right: 0;
 }
 
