@@ -13,17 +13,17 @@
 }
 
 /* планшеты */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1120px) {
     .main-content {
         display: flex;
         gap: 48px;
     }
 
-    .main-content__text {
+    .main__text {
         width: 50%;
     }
 
-    .main-content__image {
+    .main__image {
         width: 50%;
         border-radius: 5px;
     }
@@ -32,15 +32,15 @@
         display: block;
     }
 
-    .header__logo {
-        padding-left: 40px;
+    .header__logo-container {
+        padding-left: 20px;
         padding-right: 0;
     }
-    .header__logo::before {
+    .header__logo-container::before {
         display: inline-block;
     }
 
-    .header__logo::after {
+    .header__logo-container::after {
         display: none;
     }
 }
@@ -50,8 +50,10 @@
     .header__group-right, .header__group-left {
         display: none;
     }
+    
     .header {
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .main__image {
