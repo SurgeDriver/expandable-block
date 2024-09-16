@@ -5,45 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="margins.css">
     <link rel="stylesheet" href="adaptive.css">
-    <title>Document</title>
+    <title>maket govna</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="flex">
+    <header class="header flex">
+        <section class="header__group-right flex">
             <button class="button button_burger" type="button"></button>
-            <div class="header__logo-container flex">
-                <img src="icons/Logo.svg" alt="" class="header__logo">
-            </div>
-        </div>
+            <a class="header__logo-container flex">
+                <span class="header__logo" src="icons/Logo.svg" alt="">
+            </a>
+        </section>
 
-        <div class="flex">
-            <div class="flex header__tablet-container">
+        <ul class="header__group-left list-reset flex">
+            <li class="header__tablet-container flex">
                 <button class="button button_call" type="button"></button>
                 <button class="button button_chat" type="button"></button>
                 <button class="button button_profile" type="button"></button>
-            </div>
-            <button class="button button_repair" type="button"></button>
-            <button class="button button_status" type="button"></button>
-        </div>
+            </li>
+            <li>
+                <button class="button button_repair" type="button"></button>    
+            </li>
+            <li>
+                <button class="button button_status" type="button"></button>
+            </li>
+        </ul>
     </header>
 
     <main class="main">
+        <section class="navigation-header flex">
+            <h1 class="navigation-header__title">Услуги и сервисы</h1>
+            <ul class="desktop-buttons list-reset">
+                <li>
+                    <button class="navigation-header__button button_icon_repair" type="button">Оставить заявку</button>
+                </li>
+                <li>
+                    <button class="navigation-header__button button_icon_status" type="button">Статус ремонта</button>
+                </li>
+            </ul>
+        </section>
 
+        <ul class="navigation list-reset">
+            <li>
+                <button class="navigation_button navigation_button_active">Ремонтируемые бренды</button>
+            </li>
+            <li>
+                <button class="navigation_button">Дополнительные услуги</button>
+            </li>
+            <li>
+                <button class="navigation_button">Цены на услуги</button>
+            </li>
+            <li>
+                <button class="navigation_button">Адреса сервисных центров</button>
+            </li>
+            <li>
+                <button class="navigation_button">Специальные цены</button>
+            </li>
+            <li>
+                <button class="navigation_button">Отзывы</button>
+            </li>
+        </ul>
 
-        <div class="navigation">
-            <button class="navigation_button navigation_button_active">Ремонтируемые бренды</button>
-            <button class="navigation_button">Дополнительные услуги</button>
-            <button class="navigation_button">Цены на услуги</button>
-            <button class="navigation_button">Адреса сервисных центров</button>
-            <button class="navigation_button">Специальные цены</button>
-            <button class="navigation_button">Отзывы</button>
-        </div>
-
-        <section class="main__section">
-            <div class="main__text">
+        <section class="main-content">
+            <div class="main-content__text">
                 <p class="section__p">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                     отремонтировать свой ноутбук Dell с официальной гарантией производителя.
