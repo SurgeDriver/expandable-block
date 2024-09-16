@@ -14,17 +14,19 @@
     <header class="header">
         <div class="flex-container">
             <button type="button" class="button button_burger"></button>
-            <div class="divider divider_tablet"></div>
-            <img src="icons/Logo.svg" alt="" class="header__logo">
+            <!-- <div class="divider divider_tablet"></div> -->
+            <div class="header__logo-container flex-container">
+                <img src="icons/Logo.svg" alt="" class="header__logo">
+            </div>
+            <!-- <div class="divider divider_mobile"></div> -->
         </div>
 
         <div class="flex-container">
-            <div class="flex-container container_tablet">
+            <div class="flex-container header__tablet-container">
                 <button type="button" class="button button_call"></button>
                 <button type="button" class="button button_chat"></button>
                 <button type="button" class="button button_profile"></button>
             </div>
-            <div class="divider divider_mobile"></div>
             <button type="button" class="button button_repair"></button>
             <button type="button" class="button button_status"></button>
         </div>
@@ -46,7 +48,7 @@
         </div>
 
         <div class="main__swiper">
-            <button type="button" class="main__swiper-slide">Ремонтируемые устройства</button>
+            <button type="button" class="main__swiper-slide main__swiper-slide_active">Ремонтируемые бренды</button>
             <button type="button" class="main__swiper-slide">Дополнительные услуги</button>
             <button type="button" class="main__swiper-slide">Цены на услуги</button>
             <button type="button" class="main__swiper-slide">Адреса сервисных центров</button>

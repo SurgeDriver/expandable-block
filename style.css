@@ -38,14 +38,59 @@ body {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
 }
 
 .header__logo {
+    position: absolute;
+}
+
+.header__logo-container {
     width: 98px;
     height: 52px;
+    justify-content: center;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.header__logo-container::before, .header__logo-container::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -16px;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+  }
+
+.header__logo-container::before {
+    left: 0;
+    display: none;
+}
+
+.header__logo-container::after {
+    right: 0;
+}
+
+.header__tablet-container {
+    padding-right: 20px;
+    position: relative;
+}
+
+.header__tablet-container::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -16px;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    right: 0;
 }
 
 .button {
@@ -71,7 +116,7 @@ body {
 }
 
 .desktop-button__text {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .flex-container_desktop {
@@ -102,13 +147,6 @@ body {
     background-image: url(icons/Profile.svg);
 }
 
-.divider {
-    width: 2px;
-    height: 32px;
-    background-color: #EAEAEA;
-    border-radius: 1px;
-}
-
 .main {
     overflow: visible;
 }
@@ -136,7 +174,8 @@ body {
 
 .main__swiper-slide {
     background-color: transparent;
-    border: none;    
+    color: rgb(126, 126, 130);
+    border: none;
     white-space: nowrap;
     height: 40px;
     font-size: 16px;
@@ -145,14 +184,20 @@ body {
     transition: border 0.2s, background-color 0.2s;
 }
 
-.main__swiper-slide:hover {
+.main__swiper-slide_active {
     background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
 }
 
+.main__swiper-slide:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+
+}
+
 .section__readMore {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     height: 24px;
     line-height: 24px;
     letter-spacing: -0.4px;
