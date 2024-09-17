@@ -1,10 +1,23 @@
-
 /* мобилки */
 @media (max-width: 768px) {
     .header__tablet-container {
         display: none;
     }
-    
+
+    .main-content {
+        display: block;
+    }
+
+    .main-content__text {
+        width: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .main-content__image {
+        width: 100%;
+    }
+
     .section__p {
         font-size: 15px;
         line-height: 18px;
@@ -19,45 +32,52 @@
         gap: 48px;
     }
 
-    .main__text {
+    .main-content__text {
         width: 50%;
+        margin-left: 25px;
     }
 
-    .main__image {
+    .main-content__image {
         width: 50%;
-        border-radius: 5px;
+        border-radius: 10px;
+        margin-right: 25px;
     }
 
     .section__p_tablet {
         display: block;
     }
 
-    .header__logo-container {
-        padding-left: 20px;
-        padding-right: 0;
-    }
-    .header__logo-container::before {
+    .header__logo::before {
         display: inline-block;
     }
 
-    .header__logo-container::after {
+    .header__logo::after {
         display: none;
     }
 }
 
 /* десктоп */
 @media (min-width: 1120px) {
-    .header__group-right, .header__group-left {
+
+    .header__group-right,
+    .header__group-left {
         display: none;
     }
-    
+
     .header {
         padding-top: 0;
         padding-bottom: 0;
     }
 
-    .main__image {
-        margin-right: 25px;
+    .main-content__text {
+        width: 50%;
+        margin-left: 30px;
+    }
+
+    .main-content__image {
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 30px;
     }
 
     .desktop-buttons {
@@ -71,4 +91,8 @@
     .section__p_desktop {
         display: block;
     }
+}
+
+* {
+    border: 1px dotted red;
 }

@@ -152,9 +152,9 @@ body {
 }
 
 
-.main {
+/* .main {
     overflow: visible;
-}
+} */
 
 .navigation {
     display: flex;
@@ -221,13 +221,15 @@ body {
 }
 
 .main-content {
-    padding-left: 16px;
-    padding-right: 16px;
+    align-items: flex-start;
 }
 
-.main__image {
-    width: 100%;
+.main-content__text {
+    width: 50%;
+}
 
+.main-content__image {
+    width: 50%;
     margin-top: 20px;
 }
 
