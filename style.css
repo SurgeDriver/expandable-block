@@ -44,9 +44,7 @@ body {
 
 .header {
     justify-content: space-between;
-    background-color: #FFF;
-    min-width: 320px;
-    
+    background-color: #FFF;    
     padding: 16px;
 }
 
