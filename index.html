@@ -13,78 +13,88 @@
 <body>
     <header class="header flex">
         <section class="header__group-right flex">
-            <button class="button button_burger" type="button"></button>
+            <button class="header__button header__button--icon--burger" type="button"></button>
             <span class="header__logo"></span>
         </section>
 
-        <ul class="header__group-left list-reset flex">
-            <li class="header__tablet-container flex">
-                <button class="button button_call" type="button"></button>
-                <button class="button button_chat" type="button"></button>
-                <button class="button button_profile" type="button"></button>
-            </li>
-            <li class="header__button flex">
-                <button class="button button_repair" type="button"></button>
-            </li>
-            <li class="header__button flex">
-                <button class="button button_status" type="button"></button>
-            </li>
-        </ul>
-    </header>
-
-    <main class="main">
-        <section class="navigation-header flex">
-            <h1 class="navigation-header__title">Услуги и сервисы</h1>
-            <ul class="desktop-buttons list-reset">
+        <section class="header__group-left flex">
+            <ul class="header__buttons--tablet list-reset flex">
                 <li>
-                    <button class="navigation-header__button button_icon_repair" type="button">Оставить заявку</button>
+                    <button class="header__button header__button--icon--call" type="button"></button>
                 </li>
                 <li>
-                    <button class="navigation-header__button button_icon_status" type="button">Статус ремонта</button>
+                    <button class="header__button header__button--icon--chat" type="button"></button>
+                </li>
+                <li>
+                    <button class="header__button header__button--icon--profile" type="button"></button>
+                </li>
+            </ul>
+
+            <ul class="list-reset flex">
+                <li>
+                    <button class="header__button header__button--icon--repair" type="button"></button>
+                </li>
+                <li>
+                    <button class="header__button header__button--icon--status" type="button"></button>
                 </li>
             </ul>
         </section>
 
-        <nav>
-            <ul class="navigation list-reset">
+    </header>
+
+    <main class="main">
+        <section class="nav-header flex">
+            <h1 class="nav-header__title">Услуги и сервисы</h1>
+            <ul class="nav-header__buttons list-reset">
                 <li>
-                    <button class="navigation_button navigation_button_active">Ремонтируемые бренды</button>
+                    <button class="nav-header__button nav-header__button--icon--repair" type="button">Оставить заявку</button>
                 </li>
                 <li>
-                    <button class="navigation_button">Дополнительные услуги</button>
+                    <button class="nav-header__button nav-header__button--icon--status" type="button">Статус ремонта</button>
+                </li>
+            </ul>
+        </section>
+
+        <nav class="nav">
+            <ul class="nav__list list-reset">
+                <li>
+                    <a class="nav__link nav__link--active">Ремонтируемые бренды</a>
                 </li>
                 <li>
-                    <button class="navigation_button">Цены на услуги</button>
+                    <a class="nav__link">Дополнительные услуги</a>
                 </li>
                 <li>
-                    <button class="navigation_button">Адреса сервисных центров</button>
+                    <a class="nav__link">Цены на услуги</a>
                 </li>
                 <li>
-                    <button class="navigation_button">Специальные цены</button>
+                    <a class="nav__link">Адреса сервисных центров</a>
                 </li>
                 <li>
-                    <button class="navigation_button">Отзывы</button>
+                    <a class="nav__link">Специальные цены</a>
+                </li>
+                <li>
+                    <a class="nav__link">Отзывы</a>
                 </li>
             </ul>
         </nav>
 
-        <section class="main-content flex">
-            <div class="main-content__text">
-                <p class="section__p">
+        <section class="main__content flex">
+            <div class="main__content_text">
+                <p class="main__text--all">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                     отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 </p>
-                <p class="section__p_tablet">
+                <p class="main__text--tablet">
                     Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
                 </p>
-                <p class="section__p_desktop">
+                <p class="main__text--desktop">
                     Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
                     количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
                     очередь, советуют нас родным и близким.
                 </p>
-                <a href="#" class="section__readMore">Читать далее</a>
+                <button class="section__readMore">Читать далее</button>
             </div>
-            <img class="main-content__image" src="images/Picture3.png" alt="">
+            <img class="main__content__image" src="images/Picture3.png" alt="">
         </section>
     </main>
 </body>
