@@ -14,11 +14,11 @@
         margin-right: 16px;
     }
 
-    .main__content__image {
+    .main__image {
         width: 100%;
     }
 
-    .main__text--all {
+    .main__text-fr {
         font-size: 15px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -37,13 +37,13 @@
         margin-left: 25px;
     }
 
-    .main__content__image {
+    .main__image {
         width: 50%;
         border-radius: 10px;
         margin-right: 25px;
     }
 
-    .main__text--tablet {
+    .main__text-fr--tablet {
         display: block;
     }
 
@@ -86,7 +86,7 @@
         margin-left: 30px;
     }
 
-    .main__content__image {
+    .main__image {
         width: 50%;
         border-radius: 10px;
         margin-right: 30px;
@@ -96,7 +96,7 @@
         display: flex;
     }
 
-    .main__text--tablet {
+    .main__text-fr--tablet {
         display: none;
     }
 

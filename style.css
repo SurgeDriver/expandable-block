@@ -177,7 +177,7 @@ body {
     border: 2px solid #B8FFEC;
 }
 
-.section__readMore {
+.main__read-more {
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -202,12 +202,12 @@ body {
     align-items: center;
 }
 
-.section__readMore:hover {
+.main__read-more:hover {
     cursor: pointer;
     background-color: #EAEAEA;
 }
 
-.section__readMore::before {
+.main__read-more::before {
     content: "";
     position: absolute;
     background-image: url(icons/Expand.svg);
@@ -228,16 +228,16 @@ body {
     width: 50%;
 }
 
-.main__content__image {
+.main__image {
     width: 50%;
     margin-top: 20px;
 }
 
-.main__text--tablet {
+.main__text-fr--tablet {
     display: none;
 }
 
-.main__text--desktop {
+.main__text-fr--desktop {
     display: none;
 }
 
