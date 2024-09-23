@@ -246,11 +246,11 @@ body {
     margin-top: 20px;
 }
 
-.main__text-fr--tablet {
+.main__text-frag--tablet {
     display: none;
 }
 
-.main__text-fr--desktop {
+.main__text-frag--desktop {
     display: none;
 }
 
@@ -402,7 +402,7 @@ body {
         width: 100%;
     }
 
-    .main__text-fr {
+    .main__text-frag {
         font-size: 15px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -427,7 +427,7 @@ body {
         margin-right: 25px;
     }
 
-    .main__text-fr--tablet {
+    .main__text-frag--tablet {
         display: block;
     }
 
@@ -480,11 +480,11 @@ body {
         display: flex;
     }
 
-    .main__text-fr--tablet {
+    .main__text-frag--tablet {
         display: none;
     }
 
-    .--desktop {
+    .main__text-frag--desktop {
         display: block;
     }
 }
