@@ -50,7 +50,6 @@ body {
 
 .header__logo,
 .aside__logo {
-    position: absolute;
     width: 98px;
     height: 52px;
     background-image: url(icons/Logo.svg);
@@ -59,7 +58,6 @@ body {
     justify-content: center;
     position: relative;
 
-    padding-left: 0px;
     padding-right: 40px;
 }
 
@@ -117,12 +115,11 @@ body {
     background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.5s;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .header__button:hover,
@@ -131,7 +128,7 @@ body {
 .aside__header-button:hover {
     transform: scale(1.05);
     cursor: pointer;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .nav-header__buttons {
@@ -261,7 +258,7 @@ body {
     flex-direction: column;
     width: 320px;
     height: 100vh;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
     background-color: #FFFFFF;
 }
 
@@ -298,7 +295,6 @@ body {
     color: #1B1C21;
     font-size: 16px;
     position: relative;
-    text-wrap: nowrap;
     display: block;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -415,12 +411,12 @@ body {
 @media (min-width: 768px) and (max-width: 1120px) {
     .main__content {
         display: flex;
-        gap: 48px;
     }
 
     .main__text {
         width: 50%;
         margin-left: 25px;
+        margin-right: 25px;
     }
 
     .main__image {
