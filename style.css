@@ -275,10 +275,6 @@ body {
 
 .button-icon {
     -webkit-user-drag: none;
-    width: 70%;
-    height: 70%;
-    align-self: center;
-    justify-self: center;
 }
 
 .aside__button--icon--close {
@@ -296,8 +292,8 @@ body {
     font-size: 16px;
     position: relative;
     display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 24px;
 }
 
