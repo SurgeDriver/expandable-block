@@ -11,92 +11,73 @@
 </head>
 
 <body>
-    <header class="header flex">
-        <section class="header__group-right flex">
-            <button class="header__button header__button--icon--burger" type="button"></button>
-            <span class="header__logo"></span>
+    <aside class="aside">
+        <section class="aside__header">
+            <button class="aside__header-button aside__button--icon--close" type="button">
+                <img class="button-icon" src="icons/Close.svg" alt="">
+            </button>
+            <span class="aside__logo"></span>
+            <button class="aside__header-button aside__button--icon--search" type="button">
+                <img class="button-icon" src="icons/Search.svg" alt="">
+            </button>
         </section>
 
-        <section class="header__group-left flex">
-            <ul class="header__buttons--tablet list-reset flex">
+        <ul class="aside-list list-reset">
+            <li class="aside__list-element">
+                <a class="aside__link aside__link--active">Ремонт техники</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Услуги и сервисы</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Корпоративным клиентам</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Продавцам техники</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Партнерам</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Производителям</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Наши сервисные центры</a>
+            </li>
+            <li class="aside__list-element">
+                <a class="aside__link">Контакты</a>
+            </li>
+        </ul>
+
+        <footer class="aside__footer">
+            <ul class="aside__footer-buttons list-reset flex">
                 <li>
-                    <button class="header__button header__button--icon--call" type="button"></button>
+                    <button class="aside__footer-button" type="button">
+                        <img class="button-icon" src="icons/Call.svg" alt="">
+                    </button>
                 </li>
                 <li>
-                    <button class="header__button header__button--icon--chat" type="button"></button>
+                    <button class="aside__footer-button" type="button">
+                        <img class="button-icon" src="icons/Chat.svg" alt="">
+                    </button>
                 </li>
                 <li>
-                    <button class="header__button header__button--icon--profile" type="button"></button>
+                    <button class="aside__footer-button" type="button">
+                        <img class="button-icon" src="icons/Profile.svg" alt="">
+                    </button>
                 </li>
             </ul>
+            <p class="aside__email">mail@cps.com</p>
+            <h1 class="aside__phone-number">8 800 890 8900</h1>
+            
+            <section class="lang-buttons flex">
+                <button class="lang-button" type="button">RU</button>
+                <button class="lang-button" type="button">EN</button>
+                <button class="lang-button" type="button">CH</button>
+            </section>
 
-            <ul class="list-reset flex">
-                <li>
-                    <button class="header__button header__button--icon--repair" type="button"></button>
-                </li>
-                <li>
-                    <button class="header__button header__button--icon--status" type="button"></button>
-                </li>
-            </ul>
-        </section>
-
-    </header>
-
-    <main class="main">
-        <section class="nav-header flex">
-            <h1 class="nav-header__title">Услуги и сервисы</h1>
-            <ul class="nav-header__buttons list-reset">
-                <li>
-                    <button class="nav-header__button nav-header__button--icon--repair" type="button">Оставить заявку</button>
-                </li>
-                <li>
-                    <button class="nav-header__button nav-header__button--icon--status" type="button">Статус ремонта</button>
-                </li>
-            </ul>
-        </section>
-
-        <nav class="nav">
-            <ul class="nav__list list-reset">
-                <li>
-                    <a class="nav__link nav__link--active">Ремонтируемые бренды</a>
-                </li>
-                <li>
-                    <a class="nav__link">Дополнительные услуги</a>
-                </li>
-                <li>
-                    <a class="nav__link">Цены на услуги</a>
-                </li>
-                <li>
-                    <a class="nav__link">Адреса сервисных центров</a>
-                </li>
-                <li>
-                    <a class="nav__link">Специальные цены</a>
-                </li>
-                <li>
-                    <a class="nav__link">Отзывы</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="main__content flex">
-            <div class="main__text">
-                <p class="main__text-fr">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="main__text-fr--tablet">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                </p>
-                <p class="main__text-fr--desktop">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                    очередь, советуют нас родным и близким.
-                </p>
-                <button class="main__read-more">Читать далее</button>
-            </div>
-            <img class="main__image" src="images/Picture3.png" alt="">
-        </section>
-    </main>
+        </footer>
+    </aside>
 </body>
 
 </html>
