@@ -310,7 +310,8 @@ body {
     font-weight: 500;
 }
 
-.aside__link:hover::before, .aside__link--active::before {
+.aside__link:hover::before,
+.aside__link--active::before {
     content: "";
     position: absolute;
     background-color: #41F6D7;
@@ -364,7 +365,8 @@ body {
     position: relative;
 }
 
-.nav-header__button--icon--status::before, .nav-header__button--icon--repair::before {
+.nav-header__button--icon--status::before,
+.nav-header__button--icon--repair::before {
     position: absolute;
     text-wrap: nowrap;
     right: 25px;
