@@ -486,10 +486,8 @@ body {
     }
 }
 
-
-/* десктоп */
-@media (min-height: 768) {
+/* @media (min-height: 768px) {
     .aside__footer {
         margin-top: 0;
     }
-}
+} */
