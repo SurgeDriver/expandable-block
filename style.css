@@ -259,9 +259,10 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 320px;
-    min-height: 768px;
+    /* min-height: 768px; */
     width: 320px;
     height: 100vh;
+    /* *height: calc(100vh - 56px); */
     overflow-y: hidden;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
     background-color: #FFFFFF;
@@ -301,8 +302,8 @@ body {
     color: #1B1C21;
     width: 100%;
     position: relative;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 24px;
 }
 
