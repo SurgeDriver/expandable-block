@@ -261,7 +261,7 @@ body {
     min-width: 320px;
     min-height: 768px;
     width: 320px;
-    height: 100vh;
+    height: 100%;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
     background-color: #FFFFFF;
 }
