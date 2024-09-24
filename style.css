@@ -1,30 +1,51 @@
+/* ---- Шрифты ---- */
 @font-face {
     font-family: "TT Lakes";
-    font-weight: 400;
-    src: url(fonts/TTLakes/TTLakes-Regular.woff) format('woff'),
+    src:url(fonts/TTLakes/TTLakes-Regular.woff) format('woff'),
         url(fonts/TTLakes/TTLakes-Regular.ttf) format('truetype');
+        font-weight: 400;
 }
 
 @font-face {
     font-family: "TT Lakes";
-    font-weight: 500;
-    src: url(fonts/TTLakes/TTLakes-Medium.woff) format('woff'),
+    src:url(fonts/TTLakes/TTLakes-Medium.woff) format('woff'),
         url(fonts/TTLakes/TTLakes-Medium.ttf) format('truetype');
+        font-weight: 500;
 }
 
 @font-face {
     font-family: "TT Lakes";
-    font-weight: 700;
-    src: url(fonts/TTLakes/TTLakes-Bold.woff) format('woff'),
+    src:url(fonts/TTLakes/TTLakes-Bold.woff) format('woff'),
         url(fonts/TTLakes/TTLakes-Bold.ttf) format('truetype');
+        font-weight: 700;
 }
 
 body {
     width: auto;
     font-family: "TT Lakes";
     background-color: #F8F8F8;
-
     margin: 0;
+}
+
+/* ---- Миксы ---- */
+.button-icon {
+    -webkit-user-drag: none;
+}
+.round-button {
+    font-family: inherit;
+    font-weight: 500;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .list-reset {
@@ -42,14 +63,15 @@ body {
     column-gap: 16px;
 }
 
+
+/* ---- Шапка ---- */
 .header {
     justify-content: space-between;
     background-color: #FFF;
     padding: 16px;
 }
 
-.header__logo,
-.aside__logo {
+.logo {
     width: 98px;
     height: 52px;
     background-image: url(icons/Logo.svg);
@@ -57,7 +79,6 @@ body {
     background-position: center;
     justify-content: center;
     position: relative;
-
     padding-right: 40px;
 }
 
@@ -102,32 +123,7 @@ body {
     margin-top: -16px;
 }
 
-.round-button,
-.header__button,
-.nav-header__button,
-.aside__header-button,
-.aside__footer-button {
-    font-family: inherit;
-    font-weight: 500;
-    width: 40px;
-    height: 40px;
-    border: 0;
-    border-radius: 50%;
-    background-color: #FF3E79;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.round-button:hover,
-.header__button:hover,
-.nav-header__button:hover,
-.aside__footer-button:hover,
-.aside__header-button:hover {
+.round-button:hover {
     transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
@@ -253,14 +249,13 @@ body {
     display: none;
 }
 
-/* ------------------------------ */
-
+/* ------ Боковое меню ------ */
 .aside {
     display: flex;
     flex-direction: column;
     min-width: 320px;
     width: 320px;
-    height: calc(100vh - 56px);
+    height: 100vh;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
     background-color: #FFFFFF;
 }
@@ -276,8 +271,10 @@ body {
     margin-top: 30px;
 }
 
-.button-icon {
-    -webkit-user-drag: none;
+.aside__footer {
+    margin-top: auto;
+    margin-bottom: 32px;
+    margin-left: 24px;
 }
 
 .aside__button--icon--close {
@@ -304,11 +301,6 @@ body {
     padding-left: 24px;
 }
 
-.aside__email {
-    font-family: inherit;
-    font-weight: 500;
-}
-
 .aside__list-button:hover::before {
     content: "";
     position: absolute;
@@ -326,10 +318,9 @@ body {
     cursor: pointer;
 }
 
-.aside__footer {
-    margin-top: auto;
-    margin-bottom: 32px;
-    margin-left: 24px;
+.aside__email {
+    font-family: inherit;
+    font-weight: 500;
 }
 
 .lang-buttons {
@@ -352,9 +343,9 @@ body {
     cursor: pointer;
 }
 
-/* ------------------------ */
-
-.nav-header__button {
+/* ---- Кнопки на заголовке десктопа ---- */
+.nav-header__button--icon--repair,
+.nav-header__button--icon--status {
     margin-left: 140px;
     position: relative;
 }
@@ -378,7 +369,10 @@ body {
     content: "Статус ремонта";
 }
 
-/* мобилки */
+
+
+/* ---- Медиа запросы ---- */
+/* Мобилки */
 @media (max-width: 768px) {
     .header__buttons--tablet {
         display: none;
@@ -403,9 +397,13 @@ body {
         line-height: 18px;
         letter-spacing: -0.3px;
     }
+    
+    .aside {
+        height: calc(100vh - 56px);
+    }
 }
 
-/* планшеты */
+/* Планшеты */
 @media (min-width: 768px) and (max-width: 1120px) {
     .main__content {
         display: flex;
@@ -434,9 +432,13 @@ body {
     .header__logo::after {
         display: none;
     }
+
+    .aside {
+        height: calc(100vh - 56px);
+    }
 }
 
-/* десктоп */
+/* Десктоп */
 @media (min-width: 1120px) {
 
     .header__group-right,
