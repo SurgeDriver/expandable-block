@@ -1,23 +1,23 @@
 /* ---- Шрифты ---- */
 @font-face {
     font-family: "TT Lakes";
-    src:url(fonts/TTLakes/TTLakes-Regular.woff) format('woff'),
+    src: url(fonts/TTLakes/TTLakes-Regular.woff) format('woff'),
         url(fonts/TTLakes/TTLakes-Regular.ttf) format('truetype');
-        font-weight: 400;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: "TT Lakes";
-    src:url(fonts/TTLakes/TTLakes-Medium.woff) format('woff'),
+    src: url(fonts/TTLakes/TTLakes-Medium.woff) format('woff'),
         url(fonts/TTLakes/TTLakes-Medium.ttf) format('truetype');
-        font-weight: 500;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: "TT Lakes";
-    src:url(fonts/TTLakes/TTLakes-Bold.woff) format('woff'),
+    src: url(fonts/TTLakes/TTLakes-Bold.woff) format('woff'),
         url(fonts/TTLakes/TTLakes-Bold.ttf) format('truetype');
-        font-weight: 700;
+    font-weight: 700;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
 .button-icon {
     -webkit-user-drag: none;
 }
+
 .round-button {
     font-family: inherit;
     font-weight: 500;
@@ -69,6 +70,13 @@ body {
     justify-content: space-between;
     background-color: #FFF;
     padding: 16px;
+}
+
+.aside__logo-link {
+    display: block;
+    width: 98px;
+    height: 52px;
+    padding-left: 20px;
 }
 
 .logo {
@@ -186,6 +194,8 @@ body {
     border: 2px solid #B8FFEC;
 }
 
+
+/* --- Контент --- */
 .main__read-more {
     font-family: inherit;
     font-size: 16px;
@@ -369,6 +379,19 @@ body {
     content: "Статус ремонта";
 }
 
+.aside__phone-number {
+    display: block;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    color: #1B1C21;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /* ---- Медиа запросы ---- */
@@ -397,7 +420,7 @@ body {
         line-height: 18px;
         letter-spacing: -0.3px;
     }
-    
+
     .aside {
         height: calc(100vh - 56px);
     }
