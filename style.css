@@ -401,17 +401,18 @@ body {
 
 /* ---- Окна и свайперы ---- */
 .swiper-slide {
-    text-align: center;
-    line-height: 80px;
-    font-size: 40px;
     background-color: #FFFFFF !important;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
-    margin-right: 16px;
-    width: 240px !important;
-    height: 72px !important;
     background: url(icons/Go.svg) no-repeat 90% 50%;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
+
+.swiper-slide:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+}
+
 .swiper-slide__img {
     display: block;
     position: relative;
@@ -421,11 +422,11 @@ body {
 }
 
 .mySwiper {
-    margin: 20px;
-    width: 240px !important;
-    height: 100px !important;
+    width: 240px;
+    height: 72px;
+    padding-bottom: 25px;
     background-color: #F8F8F8;
-    /* border: 1px solid blue; */
+    border: 1px solid black;
 }
 
 .swiper-pagination {
@@ -433,12 +434,13 @@ body {
 }
 
 .swiper-pagination-bullet {
-    opacity: 1 !important;
-    background-color: #DDDDDD !important;
+    opacity: 1;
+    background-color: #DDDDDD;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #B5B6BC !important;
+    background-color: #B5B6BC;
+    transform: scale(1.3);
 }
 
 
