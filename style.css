@@ -329,8 +329,13 @@ body {
 }
 
 .aside__email {
+    display: block;
     font-family: inherit;
     font-weight: 500;
+    font-style: normal;
+    color: #1B1C21;
+    text-decoration: none;
+    margin-top: 30px;
 }
 
 .lang-buttons {
@@ -384,14 +389,59 @@ body {
     font-family: inherit;
     font-size: 24px;
     font-weight: 700;
+    font-style: normal;
     line-height: 32px;
-    letter-spacing: -0.6000000238418579px;
+    letter-spacing: -0.6px;
     text-align: left;
     color: #1B1C21;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
+
+/* ---- Окна и свайперы ---- */
+.swiper-slide {
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    background-color: #FFFFFF !important;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin-right: 16px;
+    width: 240px !important;
+    height: 72px !important;
+    background: url(icons/Go.svg) no-repeat 90% 50%;
+}
+.swiper-slide__img {
+    display: block;
+    position: relative;
+    top: 25%;
+    height: 50%;
+    left: 10px;
+}
+
+.mySwiper {
+    margin: 20px;
+    width: 240px !important;
+    height: 100px !important;
+    background-color: #F8F8F8;
+    /* border: 1px solid blue; */
+}
+
+.swiper-pagination {
+    transform: translateY(10px);
+}
+
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: #DDDDDD !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC !important;
+}
+
+
 
 
 /* ---- Медиа запросы ---- */

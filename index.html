@@ -4,81 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>maket govna</title>
 </head>
 
 <body>
-    <aside class="aside">
-        <header class="aside__header">
-            <button class="aside__button--icon--close round-button" type="button">
-                <img class="button-icon" src="icons/Close.svg" alt="">
-            </button>
-            <a href="wikipedia.org" class="aside__logo-link">
-                <img class="aside__logo" src="icons/Logo.svg">
-            </a>
-            <button class="aside__button--icon--search round-button" type="button">
-                <img class="button-icon" src="icons/Search.svg" alt="">
-            </button>
-        </header>
-
-        <ul class="aside-list list-reset">
-            <li class="aside__list-element">
-                <button class="aside__list-button">Ремонт техники</button>
+    <!-- Slider main container -->
+    <section class="swiper mySwiper">
+        <ul class="swiper-wrapper list-reset">
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Услуги и сервисы</button>
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Корпоративным клиентам</button>
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Продавцам техники</button>
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Партнерам</button>
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Производителям</button>
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Наши сервисные центры</button>
-            </li>
-            <li class="aside__list-element">
-                <button class="aside__list-button">Контакты</button>
+            <li class="swiper-slide">
+                <img class="swiper-slide__img" src="images/Lenovo.png" alt="">
             </li>
         </ul>
-
-        <footer class="aside__footer">
-            <ul class="aside__footer-buttons list-reset flex">
-                <li>
-                    <button class="round-button" type="button">
-                        <img class="button-icon" src="icons/Call.svg" alt="">
-                    </button>
-                </li>
-                <li>
-                    <button class="round-button" type="button">
-                        <img class="button-icon" src="icons/Chat.svg" alt="">
-                    </button>
-                </li>
-                <li>
-                    <button class="round-button" type="button">
-                        <img class="button-icon" src="icons/Profile.svg" alt="">
-                    </button>
-                </li>
-            </ul>
-
-            <p class="aside__email">mail@cps.com</p>
-            <a href="tel:+281312831" class="aside__phone-number">8 800 890 8900</a>
-
-            <section class="lang-buttons flex">
-                <button class="lang-button" type="button">RU</button>
-                <button class="lang-button" type="button">EN</button>
-                <button class="lang-button" type="button">CH</button>
-            </section>
-
-        </footer>
-    </aside>
+        <div class="swiper-pagination"></div>
+    </section>
 </body>
+
+<script type="module" src="script.js"></script>
+<script src="swiper-bundle.min.js"></script>
 
 </html>
