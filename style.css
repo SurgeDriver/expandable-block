@@ -208,11 +208,6 @@ body {
     align-items: center;
 }
 
-.main__expand-button *,
-.services__expand-button * {
-    /* border: 1px solid black; */
-} 
-
 .expand-icon {
     margin-right: 10px;
     height: 14px;
@@ -426,6 +421,8 @@ body {
     gap: 16px;
     margin-left: 24px;
     margin-right: 24px;
+
+    overflow: hidden;
 }
 
 .services-button:hover {
