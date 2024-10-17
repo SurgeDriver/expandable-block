@@ -2,16 +2,11 @@ var swiper = new Swiper(".mySwiper", {
   width: 240,
   spaceBetween: 16,
   grabCursor: true,
-  // slidesPerView: 'auto',
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
-
-
-
 
 const gridItems = document.querySelectorAll('.services li');
 const toggleButton = document.querySelector('.services__expand-button');
@@ -42,19 +37,3 @@ function showHide() {
   }
 }
 toggleButton.addEventListener('click', showHide);
-
-/* 
-
-gridItems - элементы грида.
-toggleButton - кнопка скрыть \ показать.
-
-При нажатии на кнопку должен меняться режим отображения (все или некоторые)
-
-По умолчанию на пк виндно 8 элементов, а на планшете 6.
-Независимо от состояния, при изменении размера окна
-список не должен скрываться, но должен меняться лимит элементов - 6 или 8.
-
-Есть класс hidden который скрывает элемент.
-
-
-*/
