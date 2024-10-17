@@ -8,15 +8,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-const gridItems = document.querySelectorAll('.services li');
-const toggleButton = document.querySelector('.services__expand-button');
+const servicesGridItems = document.querySelectorAll('.services li');
+const servicesButton = document.querySelector('.services__expand-button');
+const servicesButtonText = servicesButton.querySelector('.expand-button__text');
+const servicesButtonIcon = servicesButton.querySelector('.expand-icon');
+
 let isExpanded = false;
 let limit = 6;
 
 function updateWithLimit() {
-  gridItems.forEach((item, index) => { item.classList.remove('hidden'); });
-  for (let i = limit; i < gridItems.length; i++) {
-    gridItems[i].classList.add('hidden');
+  servicesGridItems.forEach((item, index) => { item.classList.remove('hidden'); });
+  for (let i = limit; i < servicesGridItems.length; i++) {
+    servicesGridItems[i].classList.add('hidden');
   }
 }
 
@@ -31,9 +34,10 @@ window.addEventListener('resize', screenChanged);
 
 function showHide() {
   isExpanded = !isExpanded;
-  toggleButton.textContent = isExpanded ? "Скрыть" : "Показать все";
-  for (let i = limit; i < gridItems.length; i++) {
-    gridItems[i].classList.toggle('hidden');
+  servicesButtonIcon.style.transform = !isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+  servicesButtonText.textContent = isExpanded ? "Скрыть" : "Показать все";
+  for (let i = limit; i < servicesGridItems.length; i++) {
+    servicesGridItems[i].classList.toggle('hidden');
   }
 }
-toggleButton.addEventListener('click', showHide);
+servicesButton.addEventListener('click', showHide);
